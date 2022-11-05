@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Испытание: редактирование профиля</title>
+</head>
+<body>
+	<h1>Профиль</h1>
+	<form action="#" method="post" enctype="multipart/form-data">
+		Ваш пол:
+		<label>
+			<input type="radio" name="gender" value="male"> Мужской
+		</label>
+		<label>
+			<input type="radio" name="gender" value="female" checked> Женский
+		</label>
+		<br>
+		Месяц и год рождения:
+		<br>
+		<select name="month">
+			<option>Январь</option>
+		</select>
+		<select name="year">
+			<option>1990</option>
+		</select>
+		<br>
+		Знакомые технологии:
+		<br>
+		<select name="techs" multiple size="4">
+			<option>HTML</option>
+			<option selected>CSS</option>
+			<option>JavaScript</option>
+			<option>Node.js</option>
+		</select>
+		<br>
+		Фото: 
+		<input type="file" name="photo">
+		<br>
+		<input type="submit" value="Сохранить">
+	</form>
+</body>
+</html>
